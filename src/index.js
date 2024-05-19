@@ -3,7 +3,7 @@ const app = express();
 const hbs = require('hbs')
 const path = require('path');
 const collection = require('./mongodb')
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 // Serve static files from the 'public' directory
 app.use('/assets',express.static('assets'));

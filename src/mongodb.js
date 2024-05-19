@@ -1,6 +1,13 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-mongoose.connect("mongodb://localhost:27017/HospitalManagmentSystem")
+
+mongoose.set('strictQuery', false); // Suppress Mongoose deprecation warning
+
+mongoose.connect(process.env.MONGODB_CONNECT_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 .then(()=>{
     console.log("monog conneceted")
 })
