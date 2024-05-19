@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="/assets/doctors.css">
+</head>
+<body>
+    
+<body style="background-color: rgb(146, 191, 207);">
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="docId">Doctor ID</label>
+                        <input type="text" name="id" id="fullName" >
+                    </div>
+                    <div>
+                        <label for="empCode">Full Name</label>
+                        <input type="text" name="empCode" id="empCode" >
+                    </div>
+                    <div>
+                        <label for="empCode">Years of Experience</label>
+                        <input type="text" name="empCode" id="empCode" >
+                    </div>
+                    <div>
+                        <label for="salary">Medical License Number</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Doctor ID</th>
+                            <th>Full Name</th>
+                            <th>Year Of Experience</th>
+                            <th>License Number</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+  </body>
+</body>
+</html>

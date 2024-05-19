@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <nav class="side-nav">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#"><span class="menu-text">Admin Page</span></a>
+                </li>
+                <li class="nav-item"><a href="./doctors"><span class="menu-text">Doctors</span></a></li>
+                </li>
+                <li class="nav-item active"><a href=".patients.hbs"><span class="menu-text">Patients</span></a>
+                </li>
+                <li class="nav-item"><a href="./diagnosis"><span class="menu-text">Diagnosis</span></a>
+                </li>
+                <li class="nav-item"><a href="./logout.hbs"><span class="menu-text">logout</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+
+    $(function () {
+        $(".nav-menu li").click(function () {
+            $(".nav-menu li").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+
+    </script>
+</body>
+
+</html>
